@@ -37,6 +37,7 @@ const Routing = () => {
 
           <Route path="/setting" element={<Setting />} />
         </Route>
+       
       </Routes>
     </div>
   );

@@ -2,10 +2,10 @@ import { Tabs } from "antd";
 import React, { useState } from "react";
 import NFTCard from "../../../components/Cards/NFTCard/NFTCard";
 const CollectionSection = () => {
-  const [mode, setMode] = useState("top");
-  const handleModeChange = (e) => {
-    setMode(e.target.value);
-  };
+  // const [mode, setMode] = useState("top");
+  // const handleModeChange = (e) => {
+  //   setMode(e.target.value);
+  // };
   const FakeData = [
     {
       url: "https://assets.raribleuserdata.com/prod/v1/image/t_gif_preview/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvYmJsZXJzLmFydGdvYmJsZXJzLmNvbS9naWZzLzE2NjIuZ2lm",

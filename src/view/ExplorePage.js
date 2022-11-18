@@ -63,6 +63,7 @@ const ExplorePage = () => {
       url: "https://assets.raribleuserdata.com/prod/v1/image/t_gif_preview/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvYmJsZXJzLmFydGdvYmJsZXJzLmNvbS9naWZzLzU0MDIuZ2lm",
     },
   ];
+  
   return (
     <div>
       <div className="max-w-[1500px]  mx-auto">
