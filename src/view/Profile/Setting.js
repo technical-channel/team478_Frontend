@@ -6,7 +6,7 @@ const Setting = () => {
     <div>
       <div className="max-w-[1100px] mx-auto w-full py-5 px-2">
         <h2 className="capitalize font-bold text-2xl ">profile settings </h2>
-        <div className="flex  flex-col lg:flex-row  justify-center  md:gap-[90px]  gap-[30px] px-2  pt-10">
+        <div className="flex  flex-col lg:flex-row  justify-center  md:gap-[90px]  gap-[30px]  pt-10">
           <div>
             <h4 className="text-capitalize text-xl font-bold capitalize ">
               account
