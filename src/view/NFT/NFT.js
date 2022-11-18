@@ -76,8 +76,8 @@ const NFT = () => {
       <div className=" ">
         <div className="px-2">
           <div className="py-10 ">
-            <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[500px] h-auto">
-              <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[500px]">
+            <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
+              <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[700px]">
                 <div className="border-b-1">
                   <Dropdown
                     menu={{
@@ -167,7 +167,7 @@ const NFT = () => {
                 </div>
               </div>
               <div className="flex-1">
-                <div className=" bg-collection-img bg-no-repeat bg-cover pt-3 px-3 max-h-[500px] overflow-y-scroll">
+                <div className=" bg-collection-img bg-no-repeat bg-cover pt-3 px-3 max-h-[700px] overflow-y-scroll">
                   <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 grow  ">
                     {FakeData.map((item, key) => (
                       <Link to="/nft/nftpage">
