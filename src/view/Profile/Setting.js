@@ -5,7 +5,7 @@ const Setting = () => {
   return (
     <div>
       <div className="max-w-[1100px] mx-auto w-full py-5 px-2">
-        <h2 class="capitalize font-bold text-2xl ">profile settings </h2>
+        <h2 className="capitalize font-bold text-2xl ">profile settings </h2>
         <div className="flex  flex-col lg:flex-row  justify-center  md:gap-[90px]  gap-[30px] px-2  pt-10">
           <div>
             <h4 className="text-capitalize text-xl font-bold capitalize ">
@@ -17,19 +17,21 @@ const Setting = () => {
 
             <div className="flex flex-col md:flex-row gap-[40px] md:gap-[100px] justify-center ">
               <div className="flex-1">
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">display name</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">
+                    display name
+                  </h2>
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="Enter name"
                   />
                 </div>
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">username</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">username</h2>
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="@ enter your name"
@@ -39,55 +41,57 @@ const Setting = () => {
                     Your profile will be available on rarible.com/[username]
                   </p>
                 </div>
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">short bio</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">short bio</h2>
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="Tell about yourself in a few words"
                   />
                 </div>
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">Email</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">Email</h2>
                   <p className="text-grey capitalize">
                     Your email for marketplace notifications
                   </p>
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="Enter your email"
                   />
                 </div>
 
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">social links</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">
+                    social links
+                  </h2>
                   <p className="text-grey capitalize">
                     Add your existing social links to build a stronger
                     reputation
                   </p>
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="Enter your email"
                   />
                 </div>
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">Website URL</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">Website URL</h2>
 
                   <input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder="https://"
                   />
                 </div>
-                <div class="pt-5 pb-5">
-                  <h2 class="font-bold capitalize text-xl ">twitter</h2>
+                <div className="pt-5 pb-5">
+                  <h2 className="font-bold capitalize text-xl ">twitter</h2>
                   <Input
-                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="inline-full-name"
                     type="text"
                     placeholder=" Enter your Twitter username"

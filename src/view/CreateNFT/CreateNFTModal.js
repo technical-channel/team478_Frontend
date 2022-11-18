@@ -44,7 +44,7 @@ const CreateNFTModal = () => {
           Display name (required)
         </h2>
         <input
-          class="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          className="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="inline-full-name"
           type="text"
           placeholder="Enter collection name"
@@ -54,7 +54,7 @@ const CreateNFTModal = () => {
       <div className="pt-3 pb-3">
         <h2 className="font-bold capitalize text-md ">Symbol(required)</h2>
         <input
-          class="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          className="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="inline-full-name"
           type="text"
           placeholder="Enter token symbol"
@@ -65,7 +65,7 @@ const CreateNFTModal = () => {
           Description (optional)
         </h2>
         <input
-          class="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          className="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="inline-full-name"
           type="text"
           placeholder="Spread some words about your token collection"
@@ -74,7 +74,7 @@ const CreateNFTModal = () => {
       <div className="pt-3 pb-3">
         <h2 className="font-bold capitalize text-md ">short url</h2>
         <input
-          class="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          className="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="inline-full-name"
           type="text"
           placeholder="www.com"

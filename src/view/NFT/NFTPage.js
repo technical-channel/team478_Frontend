@@ -208,37 +208,37 @@ const NFTPage = () => {
                 </a>
               </Dropdown>
             </div>
-            <div class="overflow-x-auto relative">
-              <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <div className="overflow-x-auto relative">
+              <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
                     <th
                       scope="col"
-                      class="py-3 px-6 capitalize text-grey text-lg "
+                      className="py-3 px-6 capitalize text-grey text-lg "
                     >
                       event
                     </th>
                     <th
                       scope="col"
-                      class="py-3 px-6 capitalize text-grey text-lg"
+                      className="py-3 px-6 capitalize text-grey text-lg"
                     >
                       price
                     </th>
                     <th
                       scope="col"
-                      class="py-3 px-6 capitalize text-grey text-lg"
+                      className="py-3 px-6 capitalize text-grey text-lg"
                     >
                       from
                     </th>
                     <th
                       scope="col"
-                      class="py-3 px-6 capitalize text-grey text-lg"
+                      className="py-3 px-6 capitalize text-grey text-lg"
                     >
                       to
                     </th>
                     <th
                       scope="col"
-                      class="py-3 px-6 capitalize text-grey text-lg"
+                      className="py-3 px-6 capitalize text-grey text-lg"
                     >
                       date
                     </th>
@@ -248,10 +248,10 @@ const NFTPage = () => {
                   {data.map((data, index) => {
                     return (
                       <>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                           <th
                             scope="row"
-                            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                            className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                           >
                             <div className="flex items-center gap-5">
                               <div>{data.icon}</div>
@@ -261,14 +261,16 @@ const NFTPage = () => {
                               </h4>
                             </div>
                           </th>
-                          <td class="py-4 px-6 font-bold text-black text-lg">
+                          <td className="py-4 px-6 font-bold text-black text-lg">
                             {data.price}
                           </td>
-                          <td class="py-4 px-6 text-blue text-lg">
+                          <td className="py-4 px-6 text-blue text-lg">
                             {data.from}
                           </td>
-                          <td class="py-4 px-6 text-blue text-lg">{data.to}</td>
-                          <td class="py-4 px-6 text-blue text-lg">
+                          <td className="py-4 px-6 text-blue text-lg">
+                            {data.to}
+                          </td>
+                          <td className="py-4 px-6 text-blue text-lg">
                             {data.date}
                           </td>
                         </tr>
