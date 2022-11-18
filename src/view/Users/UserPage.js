@@ -125,8 +125,8 @@ const UserPage = () => {
             <SearchComponent placeholder={"by nfts"} />
           </div>
         </div>
-        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] px-2  md:max-h-[500px] h-auto w-full ">
-          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[500px]  ">
+        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] px-2  md:max-h-[700px] h-auto w-full ">
+          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px]  ">
             <div className="border-b-2 pb-4">
               <Dropdown
                 menu={{
@@ -188,7 +188,7 @@ const UserPage = () => {
               </button>
             </div>
           </div>
-<div className="max-h-[500px] overflow-y-scroll w-full">
+<div className="max-h-[700px] overflow-y-scroll w-full">
 <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 ">
             {FakeData.map((item, key) => (
               <NFTCard key={key} data={item} />
