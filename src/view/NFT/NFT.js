@@ -72,108 +72,119 @@ const NFT = () => {
     },
   ];
   return (
-    <div className="max-w-[1500px]  mx-auto">
-      <div className=" ">
-        <div className="px-2">
-          <div className="py-10 ">
-            <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-[50px] max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
-              <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[700px]">
-                <div className="border-b-1">
-                  <Dropdown
-                    menu={{
-                      items,
-                    }}
-                  >
-                    <a onClick={(e) => e.preventDefault()}>
-                      <Space className=" border-b-2 px-3 py-3">
-                        <div className="flex gap-5 justify-between   py-3">
-                          <img
-                            src={
-                              process.env.PUBLIC_URL + "./assets/nftlogo.png"
-                            }
-                            alt=""
-                          />
-                          <p className="p-0 m-0  font-thin text-black">
-                            Explore
-                            <br />
-                            Select Blockchain
-                          </p>
-                        </div>
-                        <DownOutlined />
-                      </Space>
-                    </a>
-                  </Dropdown>
-                </div>
-                <div className="border-b-2 pb-4">
-                  <Dropdown
-                    menu={{
-                      items,
-                    }}
-                  >
-                    <a onClick={(e) => e.preventDefault()}>
-                      <Space className=" px-3 py-3">
-                        <h4 className="capitalize font-bold text-lg p-0 m-0">
-                          status
-                        </h4>
+    <>
+      <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  py-5 ">
+        <div className="border bg-cyan p-2 rounded-lg px-5">
+          <button className="capitalize text-lg "> {"<"} filter </button>
+        </div>
 
-                        <DownOutlined />
-                      </Space>
-                    </a>
-                  </Dropdown>
-                  <div className="flex gap-5  pt-5 pb-3">
-                    <button className="bg-black rounded-lg px-4 py-3 text-white capitalize">
-                      all
-                    </button>
+        <div className="flex-1">
+          <SearchComponent placeholder={" by NFTs"} />
+        </div>
+      </div>
+      <div className="max-w-[1500px]  mx-auto">
+        <div className=" ">
+          <div className="px-2">
+            <div className="py-10 ">
+              <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
+                <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[700px]">
+                  <div className="border-b-1">
+                    <Dropdown
+                      menu={{
+                        items,
+                      }}
+                    >
+                      <a onClick={(e) => e.preventDefault()}>
+                        <Space className=" border-b-2 px-3 py-3">
+                          <div className="flex gap-5 justify-between   py-3">
+                            <img
+                              src={
+                                process.env.PUBLIC_URL + "./assets/nftlogo.png"
+                              }
+                              alt=""
+                            />
+                            <p className="p-0 m-0  font-thin text-black">
+                              Explore
+                              <br />
+                              Select Blockchain
+                            </p>
+                          </div>
+                          <DownOutlined />
+                        </Space>
+                      </a>
+                    </Dropdown>
+                  </div>
+                  <div className="border-b-2 pb-4">
+                    <Dropdown
+                      menu={{
+                        items,
+                      }}
+                    >
+                      <a onClick={(e) => e.preventDefault()}>
+                        <Space className=" px-3 py-3">
+                          <h4 className="capitalize font-bold text-lg p-0 m-0">
+                            status
+                          </h4>
+
+                          <DownOutlined />
+                        </Space>
+                      </a>
+                    </Dropdown>
+                    <div className="flex gap-5  pt-5 pb-3">
+                      <button className="bg-black rounded-lg px-4 py-3 text-white capitalize">
+                        all
+                      </button>
+                      <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
+                        buy now
+                      </button>
+                    </div>
                     <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
-                      buy now
+                      live auction
                     </button>
                   </div>
-                  <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
-                    live auction
-                  </button>
-                </div>
 
-                <div className="border-b-2 pb-4">
-                  <Dropdown
-                    menu={{
-                      items,
-                    }}
-                  >
-                    <a onClick={(e) => e.preventDefault()}>
-                      <Space className=" px-3 py-3">
-                        <h4 className="capitalize font-bold text-lg p-0 m-0">
-                          price
-                        </h4>
+                  <div className="border-b-2 pb-4">
+                    <Dropdown
+                      menu={{
+                        items,
+                      }}
+                    >
+                      <a onClick={(e) => e.preventDefault()}>
+                        <Space className=" px-3 py-3">
+                          <h4 className="capitalize font-bold text-lg p-0 m-0">
+                            price
+                          </h4>
 
-                        <DownOutlined />
-                      </Space>
-                    </a>
-                  </Dropdown>
-                  <div className="flex gap-5  items-center pt-5 pb-3">
-                    <button className="bg-cyan rounded-lg px-4 py-3 text-grey font-bold capitalize">
-                      min
-                    </button>
-                    <p className="p-0 m-0 text-grey">to</p>
-                    <button className="bg-cyan rounded-lg px-4 py-3 text-grey font-bold capitalize">
-                      max
-                    </button>
-                    <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
-                      ETH
+                          <DownOutlined />
+                        </Space>
+                      </a>
+                    </Dropdown>
+                    <div className="flex gap-5  items-center pt-5 pb-3">
+                      <button className="bg-cyan rounded-lg px-4 py-3 text-grey font-bold capitalize">
+                        min
+                      </button>
+                      <p className="p-0 m-0 text-grey">to</p>
+                      <button className="bg-cyan rounded-lg px-4 py-3 text-grey font-bold capitalize">
+                        max
+                      </button>
+                      <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
+                        ETH
+                      </button>
+                    </div>
+                    <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize w-full ">
+                      Apply
                     </button>
                   </div>
-                  <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize w-full ">
-                    Apply
-                  </button>
                 </div>
-              </div>
-              <div className="flex-1">
-                <div className=" bg-collection-img bg-no-repeat bg-cover pt-3 px-3 max-h-[700px] overflow-y-scroll">
-                  <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 grow  ">
-                    {FakeData.map((item, key) => (
-                      <Link to="/nft/nftpage">
-                        <NFTCard key={key} data={item} />
-                      </Link>
-                    ))}
+                <div className="flex-1">
+                  <div className=" bg-collection-img bg-no-repeat bg-cover pt-3 px-3 max-h-[700px] overflow-y-scroll">
+                    <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 grow  ">
+                      {FakeData.map((item, key) => (
+                        <Link to="/nft/nftpage">
+                          <NFTCard key={key} data={item} />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,7 +192,7 @@ const NFT = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
