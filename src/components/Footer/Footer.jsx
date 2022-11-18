@@ -46,16 +46,16 @@ const Footer = () => {
         <div className="mx-6 py-10 text-center md:text-left">
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="mb-4">
-              <img src={process.env.PUBLIC_URL + "/assets/kk.png"} />
+              <img src={process.env.PUBLIC_URL + "/assets/logo.png"}  className="mx-auto md:mx-0 mt-[-16px]"/>
               <p className="text-grey capitalize">
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
               </p>
             </div>
-            {FooterData.map((item, key) => (
+            {FooterData.map((item, index) => (
               <>
-                <FooterLinks data={item} key={key} />
+                <FooterLinks data={item} key={index} />
               </>
             ))}
 
