@@ -77,7 +77,7 @@ const NFT = () => {
         <div className="px-2">
           <div className="py-10 ">
             <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[500px] h-auto">
-              <div className="sticky h-screen  md:top-[120px] top-0 z-[1000] bg-white md:max-h-[500px]">
+              <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[500px]">
                 <div className="border-b-1">
                   <Dropdown
                     menu={{
