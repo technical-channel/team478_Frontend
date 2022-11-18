@@ -49,7 +49,7 @@ const FeaturedSection = () => {
                         <p>0.00012 ETH</p>
                       </div>
                       <button className="bg-[#C4C4C4] text-white  w-full rounded-xl py-3 px-2 hover:bg-button-img hover:bg-no-repeat hover:bg-cover hover:text-white">
-                        Place Bid
+                        Place A Bid
                       </button>
                     </div>
                   </div>
