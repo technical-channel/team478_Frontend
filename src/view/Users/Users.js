@@ -99,7 +99,7 @@ const Users = () => {
                 <Link to="/users/userpage">
                   <div className="border rounded-lg p-3 max-w-[400px] mx-auto ">
                     <div>
-                      {console.log(process.env.PUBLIC_URL)}
+                      
                       <img
                         src={process.env.PUBLIC_URL + data.imgUrl}
                         className="w-full"
