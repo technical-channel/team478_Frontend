@@ -3,7 +3,7 @@ import { Button } from "../../../components/Button/Primary";
 export const AboutSection = () => {
   return (
     <div>
-      <section className="about-sec pt-[3rem]  " data-aos="fade-down-right">
+      <section className="about-sec pt-[3rem] ">
         <div className=" max-w-[400px] w-full mx-auto text-center  pb-5">
           <h2 className="capitalize text-3xl  text-black font-black text-center pb-2 ">
             About us
