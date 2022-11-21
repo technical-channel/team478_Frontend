@@ -13,9 +13,16 @@ const Setting = () => {
             </h4>
           </div>
           <div>
-            <img src={process.env.PUBLIC_URL + "./assets/rectangle.jpg"} />
+          <div className="relative  md:px-[40px] px-[20px]">
+        <img
+          src={process.env.PUBLIC_URL + "/assets/settingbg.png"}
+          className=" relative w-full mx-auto "
+        />
+        <img src={process.env.PUBLIC_URL + "/assets/settingdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5 "
+        />
+</div>
 
-            <div className="flex flex-col md:flex-row gap-[40px] md:gap-[100px] justify-center ">
+            <div className="flex flex-col md:flex-row gap-[40px] md:gap-[100px] justify-center  py-9">
               <div className="flex-1">
                 <div className="pt-5 pb-5">
                   <h2 className="font-bold capitalize text-xl ">
