@@ -6,8 +6,7 @@ function NFTCard({ data }) {
       <div className="rounded-xl">
         <img className="rounded-xl w-full " src={data.url} />
       </div>
-    
-   
+
       <div>
         <div className="flex justify-between py-1 pt-5">
           <p className="text-grey">@Jonny</p>
