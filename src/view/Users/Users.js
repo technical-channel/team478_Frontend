@@ -86,7 +86,7 @@ const Users = () => {
   ];
   return (
     <div>
-      <div className="max-w-[1500px] mx-auto pt-5 md:pt-[2rem]">
+      <div className="max-w-[1500px] mx-auto pt-2 md:pt-[2rem]">
         <div className="flex justify-center items-center gap-[20px] md:px-0 px-2">
           <div className="flex-1">
             <SearchComponent placeholder={"users"} />

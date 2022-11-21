@@ -62,7 +62,7 @@ const UserPage = () => {
           className="w-full mx-auto px-2"
         />
 
-        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-5 md:px-[20px] px-0 ">
+        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-5 md:px-[20px] px-[40px] ">
           <div className="flex-1 md:max-w-[800px] px-2  w-full ">
             <div className="flex items-center gap-4">
             <h1 className="capitalize text-2xl text-black ">gods unchained</h1>
@@ -98,7 +98,7 @@ const UserPage = () => {
             </div>
           </div>
 
-          <div className="  border p-5 rounded-lg justify-between  px-5">
+          <div className="  border p-5 rounded-lg justify-between  px-5 w-full md:w-auto ">
             <div className="flex  gap-[40px]  justify-between items-center">
               <h4 className="capitalize text-grey text-sm">followers</h4>
               <h4 className="text-sm  font-bold uppercase">19.9 K </h4>
@@ -116,7 +116,7 @@ const UserPage = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  my-10">
+        <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-[40px]  my-10">
           <div className="border bg-cyan p-2 rounded-lg px-5">
             <button className="capitalize text-lg "> {"<"} filter </button>
           </div>
@@ -126,7 +126,7 @@ const UserPage = () => {
           </div>
         </div>
         <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] px-2  md:max-h-[700px] h-auto w-full ">
-          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px]  ">
+          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px] px-[40px] ">
             <div className="border-b-2 pb-4">
               <Dropdown
                 menu={{
