@@ -61,7 +61,7 @@ const UserPage = () => {
           src={process.env.PUBLIC_URL + "/assets/userbg.png"}
           className=" relative w-full mx-auto "
         />
-        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[30px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] "
+        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5  "
         />
 </div>
     
