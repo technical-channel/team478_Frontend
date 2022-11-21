@@ -23,7 +23,7 @@ const ConnectWallet = () => {
     <div>
       {!active ? (
         <button
-          className=" bg-[url('/assets/buttonbg.png')] bg-no-repeat rounded-lg  text-white  xl:text-lg text-md  px-4 py-2 capitalize  justify-center items-center z-[100] w-max	"
+          className="last: bg-[url('/assets/buttonbg.png')] bg-no-repeat rounded-lg  text-white  xl:text-lg text-md  px-4 py-2 capitalize  justify-center items-center z-[100] w-max	"
           onClick={() => login()}
         >
           Connect Wallet
@@ -35,7 +35,7 @@ const ConnectWallet = () => {
           <div>
             <Menu.Button className="inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700  ">
               <div
-                className="rounded-full p-5 h-[40px] w-[40px] bg-[url('/assets/buttonbg.png')] bg-no-repeat bg-cover"
+                className=" rounded-full p-5 h-[40px] w-[40px] bg-[url('/assets/buttonbg.png')] bg-no-repeat bg-cover"
                 onClick={() => logout()}
               ></div>
               <ChevronDownIcon

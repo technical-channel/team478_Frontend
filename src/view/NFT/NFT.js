@@ -95,7 +95,7 @@ const NFT = () => {
                       }}
                     >
                       <a onClick={(e) => e.preventDefault()}>
-                        <Space className=" border-b-2 px-3 py-3">
+                        <Space className=" border-b-2 py-3">
                           <div className="flex gap-5 justify-between   py-3">
                             <img
                               src={
@@ -121,7 +121,7 @@ const NFT = () => {
                       }}
                     >
                       <a onClick={(e) => e.preventDefault()}>
-                        <Space className=" px-3 py-3">
+                        <Space className="  py-3">
                           <h4 className="capitalize font-bold text-lg p-0 m-0">
                             status
                           </h4>
@@ -150,7 +150,7 @@ const NFT = () => {
                       }}
                     >
                       <a onClick={(e) => e.preventDefault()}>
-                        <Space className=" px-3 py-3">
+                        <Space className=" py-3">
                           <h4 className="capitalize font-bold text-lg p-0 m-0">
                             price
                           </h4>

@@ -55,7 +55,7 @@ export default function Example() {
                       to={item.to}
                       className={classNames(
                         item.current ? " text-black" : "text-black",
-                        "px-2 py-2 rounded-md md:text-lg text-sm  font-medium"
+                        "px-2 py-2 rounded-md md:text-lg text-sm  font-medium  focus:[#40a9ff]"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -86,7 +86,7 @@ export default function Example() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              <div className="md:hidden block">
+              <div className="  md:hidden block">
                 <SearchComponent placeholder={"items"} />
               </div>
               {navigation.map((item) => (
@@ -94,7 +94,7 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.to}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-black "
+                  className="block px-3 py-2 rounded-md text-base font-medium text-black focus:[#40a9ff] "
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
@@ -112,7 +112,7 @@ export const SearchComponent = ({ placeholder }) => {
   return (
     <>
       {" "}
-      <form className="px-2 search-sec">
+      <form className="  px-2 search-sec">
         <div className="relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
