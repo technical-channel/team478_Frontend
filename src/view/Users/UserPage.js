@@ -52,23 +52,28 @@ const UserPage = () => {
     {
       url: "https://assets.raribleuserdata.com/prod/v1/image/t_gif_preview/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvYmJsZXJzLmFydGdvYmJsZXJzLmNvbS9naWZzLzUzNjIuZ2lm",
     },
-   
   ];
   return (
     <div>
-      <div className="max-w-[1500px] mx-auto py-5">
+      <div className="max-w-[1500px] mx-auto py-5  ">
+        <div className="relative  md:px-[40px] px-[20px]">
         <img
-          src={process.env.PUBLIC_URL + "/assets/collectionpage.png"}
-          className="w-full mx-auto px-2"
+          src={process.env.PUBLIC_URL + "/assets/userbg.png"}
+          className=" relative w-full mx-auto "
         />
+        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[30px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] "
+        />
+</div>
+    
 
-        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-5 md:px-[20px] px-[40px] ">
+        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-10  md:px-[40px] px-[20px] ">
           <div className="flex-1 md:max-w-[800px] px-2  w-full ">
             <div className="flex items-center gap-4">
-            <h1 className="capitalize text-2xl text-black ">gods unchained</h1>
-            <img src={process.env.PUBLIC_URL+"/assets/right.png"} alt=""/>
+              <h1 className="capitalize text-2xl text-black ">
+                gods unchained
+              </h1>
+              <img src={process.env.PUBLIC_URL + "/assets/right.png"} alt="" />
             </div>
-            
 
             <p>
               LIŔONA is a creator of minimalistic ⨯ bold graphic and digital
@@ -188,14 +193,13 @@ const UserPage = () => {
               </button>
             </div>
           </div>
-<div className="max-h-[700px] overflow-y-scroll w-full">
-<div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 ">
-            {FakeData.map((item, key) => (
-              <NFTCard key={key} data={item} />
-            ))}
+          <div className="max-h-[700px] overflow-y-scroll w-full">
+            <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 ">
+              {FakeData.map((item, key) => (
+                <NFTCard key={key} data={item} />
+              ))}
+            </div>
           </div>
-</div>
-          
         </div>
       </div>
     </div>

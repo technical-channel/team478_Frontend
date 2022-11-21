@@ -8,11 +8,11 @@ function NFTCard({ data }) {
       </div>
 
       <div>
-        <div className="flex justify-between py-1 pt-5">
+        <div className="flex justify-between py-1 pt-5 gap-3">
           <p className="text-grey">@Jonny</p>
           <p className="text-grey"> Current Bid </p>
         </div>
-        <div className="flex justify-between py-1">
+        <div className="flex justify-between py-1 gap-3">
           <p className="font-black text-sm text-black">Yellow Painting </p>
           <p className="font-black text-sm text-black">0.00012 ETH</p>
         </div>
