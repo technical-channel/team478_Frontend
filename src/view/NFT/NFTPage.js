@@ -117,9 +117,12 @@ const NFTPage = () => {
                 <h2 className="text-black text-2xl font-bold">0.1091 WETH</h2>
                 <h5 className="text-grey">$173.52</h5>
               </div>
-              <div className="flex justify-center items-center gap-2 border rounded-lg p-2 max-w-[300px] w-full">
+              <div className="flex justify-center items-center gap-2 border rounded-lg p-2 max-w-[300px] w-full make-offer ">
                 <MdLocalOffer className="text-darkblue" />
-                <p className="capitalize text-darkblue p-0 m-0 font-bold ">
+                <p
+                  className="capitalize text-darkblue p-0 mb-[0rem] font-bold "
+             
+                >
                   make offer
                 </p>
               </div>

@@ -78,3 +78,10 @@ color: white !important;
 a:focus {
   color: #40a9ff;
 }
+.make-offer p{
+  margin-bottom:0!important
+}
+.ant-dropdown-menu {
+ padding: 0 !important;
+  box-shadow: none!important;
+}

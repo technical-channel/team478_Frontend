@@ -30,7 +30,7 @@ const CreateNFTModal = () => {
           <h5>At least 300x300 pixels, max. size 5MB, GIF, JPEG or PNG</h5>
           <Upload {...props}>
             <button
-              className="border p-3 bg-grey rounded-lg"
+              className="border p-2 mt-3 bg-grey rounded-lg"
               type="file"
               icon={<UploadOutlined />}
             >
