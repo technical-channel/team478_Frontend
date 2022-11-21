@@ -73,7 +73,7 @@ const NFT = () => {
   ];
   return (
     <>
-      <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  py-5 ">
+      <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  md:py-5 py-2">
         <div className="border bg-cyan p-2 rounded-lg px-5">
           <button className="capitalize text-lg "> {"<"} filter </button>
         </div>
@@ -85,7 +85,7 @@ const NFT = () => {
       <div className="max-w-[1500px]  mx-auto">
         <div className=" ">
           <div className="px-2">
-            <div className="py-10 ">
+            <div className="md:py-10  py-2">
               <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
                 <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[700px]">
                   <div className="border-b-1">
