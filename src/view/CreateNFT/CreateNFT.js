@@ -137,11 +137,12 @@ const CreateNFT = () => {
                 type="text"
                 placeholder="10 %"
               />
-            </div>
-            <div>
-              <h2 className="font-bold capitalize text-md  pb-2 ">
+              <h2 className="font-bold capitalize text-md  pt-2 ">
                 Suggested: 0%, 10%, 20%, 30%. Maximum is 50%
               </h2>
+            </div>
+            <div>
+              
               <button className="border text-center text-black p-2  font-bold rounded-lg w-full">
                 Show advanced settings
               </button>

@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { Fragment } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink,Link, Outlet } from "react-router-dom";
 
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const ExplorePage = () => {
- 
-  
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   
   return (
     <div>
@@ -19,12 +22,18 @@ const ExplorePage = () => {
             </div>
             <div className="flex gap-5 justify-between  items-center md:px-[20px] px-0 ">
               <div className="flex gap-5 justify-center items-center">
-                <Link to="/explore/nft" className="text-black">
+                <NavLink to="/explore/nft"  
+   className={({ isActive }) =>
+   isActive ? 'text-[#40a9ff] font-bold' : 'text-[#000] '} >
+              
                   NFTs
-                </Link>
-                <Link to="/explore/users" className="text-black">
+                </NavLink>
+                <NavLink to="/explore/users"  
+                className={({ isActive }) =>
+   isActive ? 'text-[#40a9ff] font-bold' : 'text-[#000] '} >
+   
                   Users
-                </Link>
+                </NavLink>
               </div>
 
               <div>

@@ -121,7 +121,7 @@ const UserPage = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-[40px]  my-10">
+        <div className="flex justify-center items-center gap-[20px] md:px-[40px] px-[20px]  my-10">
           <div className="border bg-cyan p-2 rounded-lg px-5">
             <button className="capitalize text-lg "> {"<"} filter </button>
           </div>
@@ -130,8 +130,8 @@ const UserPage = () => {
             <SearchComponent placeholder={"by nfts"} />
           </div>
         </div>
-        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] px-2  md:max-h-[700px] h-auto w-full ">
-          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px] px-[40px] ">
+        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] md:max-h-[700px] h-auto w-full   md:px-[40px] px-[20px] ">
+          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px] ">
             <div className="border-b-2 pb-4">
               <Dropdown
                 menu={{

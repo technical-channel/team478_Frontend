@@ -75,13 +75,17 @@ color: white !important;
   color: grey;
 }
 
-a:focus {
+/* a:focus {
   color: #40a9ff;
-}
+} */
 .make-offer p{
   margin-bottom:0!important
 }
 .ant-dropdown-menu {
  padding: 0 !important;
   box-shadow: none!important;
+}
+.activeButton {
+  background-color: #FF00EE;
+  color:blue;
 }

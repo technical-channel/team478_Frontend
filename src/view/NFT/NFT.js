@@ -73,6 +73,7 @@ const NFT = () => {
   ];
   return (
     <>
+    
       <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  md:py-5 py-2">
         <div className="border bg-cyan p-2 rounded-lg px-5">
           <button className="capitalize text-lg "> {"<"} filter </button>

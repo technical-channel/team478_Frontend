@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Language from "../../view/ExplorePage";
-import { Link } from "react-router-dom";
+import {NavLink, Link } from "react-router-dom";
 // import { Button } from "../Button/Primary";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -50,17 +50,17 @@ export default function Example() {
               <div className="  hidden sm:block">
                 <div className="flex  items-center md:space-x-4 space-x-0">
                   {navigation.map((item) => (
-                    <Link
+                    <NavLink
                       key={item.name}
                       to={item.to}
-                      className={classNames(
-                        item.current ? " text-black" : "text-black",
-                        "px-2 py-2 rounded-md md:text-lg text-sm  font-medium  focus:[#40a9ff]"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
+                      
+                     
+                      className={({ isActive }) =>
+                      isActive ? 'text-[#40a9ff]   px-2 py-2 rounded-md md:text-lg text-sm ' : 'text-[#000]  px-2 py-2 rounded-md md:text-lg text-sm '} 
+                      // aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   ))}
 
                   <ConnectWallet />
