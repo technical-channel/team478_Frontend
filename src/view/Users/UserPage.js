@@ -61,14 +61,14 @@ const UserPage = () => {
           src={process.env.PUBLIC_URL + "/assets/userbg.png"}
           className=" relative w-full mx-auto "
         />
-        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5  "
+        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5 "
         />
 </div>
     
 
-        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-14  md:px-[40px] px-[20px] ">
+        <div className="flex justify-between items-center flex-col md:flex-row gap-5 pt-14  md:px-[40px] px-[20px] ">
           <div className="flex-1 md:max-w-[800px] px-2  w-full ">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 ">
               <h1 className="capitalize text-2xl text-black ">
                 gods unchained
               </h1>

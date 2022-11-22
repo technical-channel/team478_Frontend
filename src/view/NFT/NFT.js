@@ -86,7 +86,7 @@ const NFT = () => {
         <div className=" ">
           <div className="px-2">
             <div className="md:py-10  py-2">
-              <div className="flex flex-col md:flex-row justify-center gap-5 max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
+              <div className="flex flex-col md:flex-row justify-center gap-[40px] max-w-[1500px] mx-auto md:px-[20px] px-0  md:max-h-[700px] h-auto">
                 <div className="sticky h-auto  md:top-[120px] top-auto bg-white md:max-h-[700px]">
                   <div className="border-b-1">
                     <Dropdown
@@ -121,7 +121,7 @@ const NFT = () => {
                       }}
                     >
                       <a onClick={(e) => e.preventDefault()}>
-                        <Space className="  py-3">
+                        <Space className="py-3">
                           <h4 className="capitalize font-bold text-lg p-0 m-0">
                             status
                           </h4>
@@ -130,11 +130,11 @@ const NFT = () => {
                         </Space>
                       </a>
                     </Dropdown>
-                    <div className="flex gap-5  pt-5 pb-3">
-                      <button className="bg-black rounded-lg px-4 py-3 text-white capitalize">
+                    <div className="flex gap-5  pt-5 pb-3 ">
+                      <button className="bg-black rounded-lg px-4 py-3 text-white capitalize focus:text-black  focus:bg-cyan">
                         all
                       </button>
-                      <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize">
+                      <button className="bg-cyan rounded-lg px-4 py-3 text-black font-bold capitalize focus:text-white focus:bg-black">
                         buy now
                       </button>
                     </div>

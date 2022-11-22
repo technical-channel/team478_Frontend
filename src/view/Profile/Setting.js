@@ -13,12 +13,12 @@ const Setting = () => {
             </h4>
           </div>
           <div>
-          <div className="relative  md:px-[40px] px-[20px]">
+          <div className="relative  ">
         <img
           src={process.env.PUBLIC_URL + "/assets/settingbg.png"}
           className=" relative w-full mx-auto "
         />
-        <img src={process.env.PUBLIC_URL + "/assets/settingdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5 "
+        <img src={process.env.PUBLIC_URL + "/assets/settingdp.png"} className=" absolute md:left-[40px]  left-[35px] bottom-[-17%] mx-auto  md:w-auto  w-[25%] px-5 "
         />
 </div>
 
@@ -45,7 +45,7 @@ const Setting = () => {
                   />
 
                   <p className="text-grey capitalize mt-2 ">
-                    Your profile will be available on rarible.com/[username]
+                    Your profile will be available on team478.com/[username]
                   </p>
                 </div>
                 <div className="pt-5 pb-5">

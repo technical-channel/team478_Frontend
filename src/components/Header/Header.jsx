@@ -100,6 +100,8 @@ export default function Example() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+                <ConnectWallet />
+
             </div>
           </Disclosure.Panel>
         </>
