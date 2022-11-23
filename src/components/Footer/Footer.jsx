@@ -16,9 +16,9 @@ const FooterData = [
       {
         link: "term & condition",
       },
-      {
-        link: "FAQ",
-      },
+      // {
+      //   link: "FAQ",
+      // },
     ],
   },
   {
