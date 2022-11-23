@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { Fragment } from "react";
 import { NavLink,Link, Outlet } from "react-router-dom";
 
@@ -10,7 +10,9 @@ const ExplorePage = () => {
   const handleClick = () => {
     setActive(!active);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   return (
     <div>
@@ -24,13 +26,13 @@ const ExplorePage = () => {
               <div className="flex gap-5 justify-center items-center">
                 <NavLink to="/explore/nft"  
    className={({ isActive }) =>
-   isActive ? 'text-[#40a9ff] font-bold' : 'text-[#000] '} >
+   isActive ? 'text-[#40a9ff] ' : 'text-[#000] '} >
               
                   NFTs
                 </NavLink>
                 <NavLink to="/explore/users"  
                 className={({ isActive }) =>
-   isActive ? 'text-[#40a9ff] font-bold' : 'text-[#000] '} >
+   isActive ? 'text-[#40a9ff]' : 'text-[#000] '} >
    
                   Users
                 </NavLink>
@@ -104,7 +106,20 @@ className={classNames(
                       "block px-4 py-2 text-sm"
                     )}
                   >
-                    French
+                  Korean
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a 
+                    
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                 Japanese
                   </a>
                 )}
               </Menu.Item>

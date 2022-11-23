@@ -6,11 +6,17 @@ import "aos/dist/aos.css";
 import "antd/dist/antd.css";
 import { useEffect } from "react";
 function App() {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
+
+
   return (
     <div className="App">
       <Routing />

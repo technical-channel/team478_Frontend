@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Modal } from "antd";
 import UploadMedia from "./UploadMedia";
 import CreateNFTModal from "./CreateNFTModal";
@@ -18,6 +18,9 @@ const CreateNFT = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="max-w-[1100px] mx-auto py-5 px-[40px]">

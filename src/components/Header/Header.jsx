@@ -7,8 +7,8 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ConnectWallet from "../Button/ConnectWallet";
 import NFTCard from "../Cards/NFTCard/NFTCard";
-import { Fragment } from "react";
 
+import React, { useState ,useEffect} from "react";
 const navigation = [
   // { name: "Collections", current: true },
   { name: "Explore", to: "/explore", href: "/explore", current: false },
@@ -21,6 +21,9 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Disclosure
       as="nav"
@@ -57,7 +60,7 @@ export default function Example() {
                      
                       className={({ isActive }) =>
                       isActive ? 'text-[#40a9ff]   px-2 py-2 rounded-md md:text-lg text-sm ' : 'text-[#000]  px-2 py-2 rounded-md md:text-lg text-sm '} 
-                      // aria-current={item.current ? "page" : undefined}
+                      
                     >
                       {item.name}
                     </NavLink>

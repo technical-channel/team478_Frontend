@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import { AboutSection } from "./components/AboutSection";
 import CollectionSection from "./components/CollectionSection";
@@ -9,7 +9,9 @@ import { NetworkSection } from "./components/NetworkSection";
 
 const HomePage = () => {
   useDocumentTitle("Home || JapanNFT");
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <HeroSection />
