@@ -16,9 +16,9 @@ const FooterData = [
       {
         link: "term & condition",
       },
-      {
-        link: "FAQ",
-      },
+      // {
+      //   link: "FAQ",
+      // },
     ],
   },
   {
@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="text-center p-6 ">
           <a href="#" className="text-[#AFAFAF] text-lg">
             Created by{" "}
-            <span className="text-[#BF6654] font-black">Team478 </span>| All
+            <span className="text-[#BF6654] font-black">Tanaka </span>| All
             Right Reserved!
           </a>
         </div>
