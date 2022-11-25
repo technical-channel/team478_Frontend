@@ -52,23 +52,28 @@ const UserPage = () => {
     {
       url: "https://assets.raribleuserdata.com/prod/v1/image/t_gif_preview/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2dvYmJsZXJzLmFydGdvYmJsZXJzLmNvbS9naWZzLzUzNjIuZ2lm",
     },
-   
   ];
   return (
     <div>
-      <div className="max-w-[1500px] mx-auto py-5">
+      <div className="max-w-[1500px] mx-auto py-5  ">
+        <div className="relative  md:px-[40px] px-[20px]">
         <img
-          src={process.env.PUBLIC_URL + "/assets/collectionpage.png"}
-          className="w-full mx-auto px-2"
+          src={process.env.PUBLIC_URL + "/assets/userbg.png"}
+          className=" relative w-full mx-auto "
         />
+        <img src={process.env.PUBLIC_URL + "/assets/userdp.png"} className=" absolute left-[40px] bottom-[-17%] mx-auto  md:w-auto  w-[14%] px-5 "
+        />
+</div>
+    
 
-        <div className="flex justify-between items-center flex-col md:flex-row gap-5 py-5 md:px-[20px] px-0 ">
+        <div className="flex justify-between items-center flex-col md:flex-row gap-5 pt-14  md:px-[40px] px-[20px] ">
           <div className="flex-1 md:max-w-[800px] px-2  w-full ">
-            <div className="flex items-center gap-4">
-            <h1 className="capitalize text-2xl text-black ">gods unchained</h1>
-            <img src={process.env.PUBLIC_URL+"/assets/right.png"} alt=""/>
+            <div className="flex items-center gap-4 ">
+              <h1 className="capitalize text-2xl text-black ">
+                gods unchained
+              </h1>
+              <img src={process.env.PUBLIC_URL + "/assets/right.png"} alt="" />
             </div>
-            
 
             <p>
               LIŔONA is a creator of minimalistic ⨯ bold graphic and digital
@@ -98,7 +103,7 @@ const UserPage = () => {
             </div>
           </div>
 
-          <div className="  border p-5 rounded-lg justify-between  px-5">
+          <div className="  border p-5 rounded-lg justify-between  px-5 w-full md:w-auto ">
             <div className="flex  gap-[40px]  justify-between items-center">
               <h4 className="capitalize text-grey text-sm">followers</h4>
               <h4 className="text-sm  font-bold uppercase">19.9 K </h4>
@@ -116,7 +121,7 @@ const UserPage = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-[20px] md:px-[20px] px-0  my-10">
+        <div className="flex justify-center items-center gap-[20px] md:px-[40px] px-[20px]  my-10">
           <div className="border bg-cyan p-2 rounded-lg px-5">
             <button className="capitalize text-lg "> {"<"} filter </button>
           </div>
@@ -125,8 +130,8 @@ const UserPage = () => {
             <SearchComponent placeholder={"by nfts"} />
           </div>
         </div>
-        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] px-2  md:max-h-[500px] h-auto w-full ">
-          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[500px]  ">
+        <div className="flex max-w-[1500px] flex-col md:flex-row  mx-auto justify-center gap-[20px] md:max-h-[700px] h-auto w-full   md:px-[40px] px-[20px] ">
+          <div className="sticky md:h-screen h-auto md:top-[120px] top-0 z-[100] bg-white  max-h-[700px] ">
             <div className="border-b-2 pb-4">
               <Dropdown
                 menu={{
@@ -188,14 +193,13 @@ const UserPage = () => {
               </button>
             </div>
           </div>
-<div className="max-h-[500px] overflow-y-scroll w-full">
-<div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 ">
-            {FakeData.map((item, key) => (
-              <NFTCard key={key} data={item} />
-            ))}
+          <div className="max-h-[700px] overflow-y-scroll w-full">
+            <div className="grid  grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 ">
+              {FakeData.map((item, key) => (
+                <NFTCard key={key} data={item} />
+              ))}
+            </div>
           </div>
-</div>
-          
         </div>
       </div>
     </div>

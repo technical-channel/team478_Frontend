@@ -40,17 +40,17 @@ const FeaturedSection = () => {
                       <img className="rounded-xl w-full" src={data.imgUrl} />
                     </div>
                     <div>
-                      <div className="flex justify-between py-1 pt-5">
+                      <div className="flex justify-between py-1 pt-5 gap-3">
                         <p>@Jonny</p>
                         <p> Current Bid </p>
                       </div>
-                      <div className="flex justify-between py-1">
-                        <p>Yellow </p>
-                        <p>0.00012 ETH</p>
+                      <div className="flex justify-between py-1 gap-3 ">
+                      <p className="font-black text-sm text-black">Yellow Painting </p>
+          <p className="font-black text-sm text-black">0.00012 ETH</p>
                       </div>
-                      <button className="bg-[#C4C4C4] text-white  w-full rounded-xl py-3 px-2 hover:bg-button-img hover:bg-no-repeat hover:bg-cover hover:text-white">
-                        Place Bid
-                      </button>
+                      <button className="bg-cyan text-black  w-full bg-no-repeat bg-cover rounded-xl py-3 px-2 hover:bg-button-img hover:bg-no-repeat hover:bg-cover hover:text-white ">
+          Place a Bid
+        </button>
                     </div>
                   </div>
                 </>

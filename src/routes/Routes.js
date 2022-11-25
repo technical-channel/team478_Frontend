@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import CreateNFT from "../view/CreateNFT/CreateNFT";
@@ -14,7 +14,9 @@ import Setting from "../view/Profile/Setting";
 
 import ExplorePage from "../view/ExplorePage";
 import NFT from "../view/NFT/NFT";
+import { SearchComponent } from "../components/Header/Header";
 const Routing = () => {
+  const [loading,setLoading]=useState('');
   return (
     <div>
       <Routes>
@@ -36,8 +38,19 @@ const Routing = () => {
           <Route path="/user_page" element={<UserPage />} />
 
           <Route path="/setting" element={<Setting />} />
+         
         </Route>
-       
+        {/* <Route
+         exact
+         path="/users"
+         component={
+       loading
+           ? () =>  <div className="flex-1">
+           <SearchComponent placeholder={"users"} />
+         </div>
+         : () => <SearchComponent />
+        }
+      /> */}
       </Routes>
     </div>
   );

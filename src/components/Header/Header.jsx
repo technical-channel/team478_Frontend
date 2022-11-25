@@ -1,14 +1,14 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Language from "../../view/ExplorePage";
-import { Link } from "react-router-dom";
+import {NavLink, Link } from "react-router-dom";
 // import { Button } from "../Button/Primary";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ConnectWallet from "../Button/ConnectWallet";
 import NFTCard from "../Cards/NFTCard/NFTCard";
-import { Fragment } from "react";
 
+import React, { useState ,useEffect} from "react";
 const navigation = [
   // { name: "Collections", current: true },
   { name: "Explore", to: "/explore", href: "/explore", current: false },
@@ -21,6 +21,9 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Disclosure
       as="nav"
@@ -50,17 +53,17 @@ export default function Example() {
               <div className="  hidden sm:block">
                 <div className="flex  items-center md:space-x-4 space-x-0">
                   {navigation.map((item) => (
-                    <Link
+                    <NavLink
                       key={item.name}
                       to={item.to}
-                      className={classNames(
-                        item.current ? " text-black" : "text-black",
-                        "px-2 py-2 rounded-md md:text-lg text-sm  font-medium"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
+                      
+                     
+                      className={({ isActive }) =>
+                      isActive ? 'text-[#40a9ff]   px-2 py-2 rounded-md md:text-lg text-sm ' : 'text-[#000]  px-2 py-2 rounded-md md:text-lg text-sm '} 
+                      
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   ))}
 
                   <ConnectWallet />
@@ -86,7 +89,7 @@ export default function Example() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              <div className="md:hidden block">
+              <div className="  md:hidden block">
                 <SearchComponent placeholder={"items"} />
               </div>
               {navigation.map((item) => (
@@ -94,12 +97,14 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.to}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-black "
+                  className="block px-3 py-2 rounded-md text-base font-medium text-black focus:[#40a9ff] "
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
+                <ConnectWallet />
+
             </div>
           </Disclosure.Panel>
         </>
@@ -112,7 +117,7 @@ export const SearchComponent = ({ placeholder }) => {
   return (
     <>
       {" "}
-      <form className="px-2 search-sec">
+      <form className="  px-2 search-sec">
         <div className="relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"

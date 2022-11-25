@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Modal } from "antd";
 import UploadMedia from "./UploadMedia";
 import CreateNFTModal from "./CreateNFTModal";
@@ -18,6 +18,9 @@ const CreateNFT = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="max-w-[1100px] mx-auto py-5 px-[40px]">
@@ -28,7 +31,9 @@ const CreateNFT = () => {
         <div className="flex flex-col md:flex-row gap-[40px]">
           <div className="">
             <div className="pt-5 pb-5">
-              <h2 className="font-bold capitalize text-xl ">choose wallet</h2>
+              <h2 className="font-bold capitalize text-xl pb-2 ">
+                choose wallet
+              </h2>
               <div className="flex justify-between  border-2 rounded-lg p-3  items-center">
                 <div className="flex items-center justify-center gap-5">
                   <div className="p-2 bg-[#427AE8]  rounded-full ">
@@ -44,13 +49,13 @@ const CreateNFT = () => {
               </div>
             </div>
             <div className="pt-5 pb-5">
-              <h2 className="font-bold capitalize text-xl ">upload file</h2>
+              <h2 className="font-bold capitalize text-xl pb-2">upload file</h2>
               <UploadMedia />
             </div>
             <div className="pt-5 pb-5">
-              <h2 className="font-bold capitalize text-xl ">price</h2>
+              <h2 className="font-bold capitalize text-xl pb-2 ">price</h2>
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="inline-full-name"
                 type="text"
                 placeholder="Enter price for one piece"
@@ -68,7 +73,7 @@ const CreateNFT = () => {
               <h2 className="font-bold capitalize text-md  pb-2 ">
                 choose collection
               </h2>
-              <div className="flex justify-between  items-center gap-5 flex-col md:flex-row">
+              <div className="flex justify-between  items-center gap-5">
                 <div className="flex-1">
                   <div className="border p-5 flex flex-col  max-w-[200px] rounded-lg ">
                     <button
@@ -99,7 +104,7 @@ const CreateNFT = () => {
             <div className="pt-5 pb-5">
               <h2 className="font-bold capitalize text-md  pb-2 ">Name</h2>
               <input
-                class="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="bg-gray-200 appearance-none border-2 placeholder-grey-50 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="inline-full-name"
                 type="text"
                 placeholder="Redeemable T-Shirt with logo&quot"
@@ -111,7 +116,7 @@ const CreateNFT = () => {
                 Description (Optional)
               </h2>
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="inline-full-name"
                 type="text"
                 placeholder="Purchasing you'll be able to get the real T-Shirt&quot;"
@@ -121,7 +126,7 @@ const CreateNFT = () => {
             <div className="pt-5 pb-5">
               <h2 className="font-bold capitalize text-md  pb-2 ">Royalties</h2>
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="inline-full-name"
                 type="text"
                 placeholder="10 %"
@@ -130,16 +135,17 @@ const CreateNFT = () => {
             <div className="pt-5 pb-5">
               <h2 className="font-bold capitalize text-md  pb-2 ">charity</h2>
               <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="inline-full-name"
                 type="text"
                 placeholder="10 %"
               />
-            </div>
-            <div>
-              <h2 className="font-bold capitalize text-md  pb-2 ">
+              <h2 className="font-bold capitalize text-md  pt-2 ">
                 Suggested: 0%, 10%, 20%, 30%. Maximum is 50%
               </h2>
+            </div>
+            <div>
+              
               <button className="border text-center text-black p-2  font-bold rounded-lg w-full">
                 Show advanced settings
               </button>

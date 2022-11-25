@@ -66,6 +66,7 @@ const CollectionSection = () => {
             <Tabs
               defaultActiveKey="1"
               centered
+              scroll={{ x: true }}
               items={[
                 {
                   label: `Art`,
